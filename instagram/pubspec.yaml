@@ -1,0 +1,32 @@
+name: flutter_application_2
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.2.6 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_native_splash: ^2.2.19
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter_native_splash:
+ color: "#FFFFFF" 
+
+flutter:
+  uses-material-design: true
+  assets: 
+    - assets/playstore.png
+    - assets/sandy.jpg
+    - assets/rose.jpg
+    - assets/jidnesh.jpg
+    - assets/rutu.jpg
+    - assets/lambo.png
+    - assets/bmw.png
+    - assets/supra.jpeg
