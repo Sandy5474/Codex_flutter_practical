@@ -7,66 +7,109 @@ class Screen4 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("INSTA"),
+        title: Text("INSTAGRAM",
+            style: TextStyle(
+                fontStyle: FontStyle.italic, fontWeight: FontWeight.w600)),
         centerTitle: true,
         backgroundColor: Colors.pinkAccent,
       ),
       body: Center(
-        child: Column(
-          children: [
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
+        child: Container(
+          width: 400,
+          child: SingleChildScrollView(
+            child: Column(
+              
               children: [
+                Row(
+                  children: [
+                    Container(
+                      height: 50,
+                      width: 50,
+                      margin: EdgeInsets.only(left: 10),
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.all(Radius.circular(100)),
+                          color: Colors.black),
+                    ),
+                    SizedBox(
+                      width: 10,
+                    ),
+                    Container(
+                      child: Text("B M W",
+                          style: TextStyle(
+                            fontSize: 20,
+                          )),
+                    ),
+                  ],
+                ),
                 Container(
-                  height: 50,
-                  width: 50,
-                  margin: EdgeInsets.only(left: 10),
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.all(Radius.circular(100)),
-                      color: Colors.black),
+                  height: 300,
+                  width: 400,
+                  color: const Color.fromARGB(255, 255, 0, 0),
+                ),
+                Row(
+                  children: [
+                    IconButton(
+                        onPressed: () {},
+                        icon: Icon(
+                          Icons.facebook,
+                          color: Colors.red,
+                        )),
+                    IconButton(
+                        onPressed: () {},
+                        icon: Icon(
+                          Icons.ac_unit_sharp,
+                          color: Colors.yellow,
+                        )),
+                  ],
                 ),
                 SizedBox(
-                  width: 10,
+                  height: 30,
+                ),
+                Row(
+                  children: [
+                    Container(
+                      height: 50,
+                      width: 50,
+                      margin: EdgeInsets.only(left: 10),
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.all(Radius.circular(100)),
+                          color: Colors.black),
+                    ),
+                    SizedBox(
+                      width: 10,
+                    ),
+                    Container(
+                      child: Text("B M W",
+                          style: TextStyle(
+                            fontSize: 20,
+                          )),
+                    ),
+                  ],
                 ),
                 Container(
-                  child: Text("B M W",
-                      style: TextStyle(
-                        fontSize: 20,
-                      )),
+                  height: 300,
+                  width: 400,
+                  color: const Color.fromARGB(255, 255, 0, 0),
                 ),
-                SizedBox(
-                  width: 190,
-                ),
-                Container(
-                  child: IconButton(
-                      onPressed: () {}, icon: Icon(Icons.more_horiz)),
+                Row(
+                  children: [
+                    IconButton(
+                        onPressed: () {},
+                        icon: Icon(
+                          Icons.facebook,
+                          color: Colors.red,
+                        )),
+                    IconButton(
+                        onPressed: () {},
+                        icon: Icon(
+                          Icons.ac_unit_sharp,
+                          color: Colors.yellow,
+                        )),
+                  ],
                 )
               ],
             ),
-            SizedBox(
-              height: 50,
-            ),
-            Container(
-              height: 300,
-              width: 400,
-              color: const Color.fromARGB(255, 255, 0, 0),
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                IconButton(
-                    onPressed: () {},
-                    icon: Icon(Icons.favorite_outline_rounded)),
-                IconButton(
-                    onPressed: () {},
-                    icon: Icon(Icons.favorite_outline_rounded)),
-                SizedBox(
-                  width: 300,
-                  height: 50,
-                )
-              ],
-            )
-          ],
+          ),
         ),
       ),
     );
