@@ -153,10 +153,11 @@ class Screen extends StatelessWidget {
                         decoration: BoxDecoration(
                             borderRadius:
                                 BorderRadius.all(Radius.circular(100)),
-                            color: Color.fromARGB(255, 4, 48, 5),
+                            //color: Color.fromARGB(255, 4, 48, 5),
                             image: DecorationImage(
                                 image: NetworkImage(
-                                    "https://cdn.hero.page/wallpapers/28d841fd-fa7f-44e9-b804-57ea19944052-marvel-universe-the-incredible-hulk-wallpaper-1.png"))),
+                                    "https://cdn.hero.page/wallpapers/28d841fd-fa7f-44e9-b804-57ea19944052-marvel-universe-the-incredible-hulk-wallpaper-1.png"),
+                                fit: BoxFit.cover)),
                       ),
                       SizedBox(
                         width: 10,
@@ -220,7 +221,8 @@ class Screen extends StatelessWidget {
                             borderRadius:
                                 BorderRadius.all(Radius.circular(100)),
                             image: DecorationImage(
-                                image: AssetImage("assets/lambo.png"))),
+                                image: AssetImage("assets/lambo.png"),
+                                fit: BoxFit.cover)),
                       ),
                       SizedBox(
                         width: 10,
@@ -288,7 +290,8 @@ class Screen extends StatelessWidget {
                             borderRadius:
                                 BorderRadius.all(Radius.circular(100)),
                             image: DecorationImage(
-                                image: AssetImage("assets/bmw.png"))),
+                                image: AssetImage("assets/bmw.png"),
+                                fit: BoxFit.cover)),
                       ),
                       SizedBox(
                         width: 10,
@@ -353,7 +356,8 @@ class Screen extends StatelessWidget {
                             borderRadius:
                                 BorderRadius.all(Radius.circular(100)),
                             image: DecorationImage(
-                                image: AssetImage("assets/supra.jpeg"))),
+                                image: AssetImage("assets/supra.jpeg"),
+                                fit: BoxFit.cover)),
                       ),
                       SizedBox(
                         width: 10,
