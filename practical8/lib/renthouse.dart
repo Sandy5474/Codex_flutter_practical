@@ -7,7 +7,7 @@ class RentHouse extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: Color.fromARGB(255, 18, 16, 16),
       body: Stack(children: [
         Container(
           margin: EdgeInsets.only(left: 50, top: 80),
