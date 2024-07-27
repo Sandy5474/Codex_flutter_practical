@@ -19,7 +19,11 @@ class Screen1 extends StatelessWidget {
             Container(
               height: 195,
               width: 196,
-              child: Image.asset("image/logo.png"),
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.all(Radius.circular(100)),
+                  image: DecorationImage(
+                      image: AssetImage("image/andrew.jpg"),
+                      fit: BoxFit.cover)),
             ),
             Container(
               height: 47,
@@ -31,7 +35,8 @@ class Screen1 extends StatelessWidget {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => Screen2(),
+                        builder: (context) =>
+                            Screen2(imgurl: "image/andrew.jpg"),
                       ));
                 },
                 child: Text(

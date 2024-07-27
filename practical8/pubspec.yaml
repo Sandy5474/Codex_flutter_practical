@@ -18,7 +18,6 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
-    - image/logo.png
     - image/andrew.jpg
     - image/house.jpg
     - image/woodenhut.jpg
