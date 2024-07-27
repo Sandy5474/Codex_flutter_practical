@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 class Youtube extends StatelessWidget {
-  const Youtube({super.key});
+  List thumbnail = ["image/rega.jpeg", "image/parv.jpeg"];
+  Youtube({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -31,7 +32,7 @@ class Youtube extends StatelessWidget {
         Icon(Icons.search),
       ]),
       body: ListView.builder(
-        itemCount: 4,
+        itemCount: thumbnail.length,
         itemBuilder: (context, index) {
           return Column(children: [
             Container(
@@ -39,7 +40,7 @@ class Youtube extends StatelessWidget {
               width: double.infinity,
               color: Colors.red,
               child: Image.asset(
-                "image/rega.jpeg",
+                thumbnail[index],
                 fit: BoxFit.cover,
               ),
             ),
