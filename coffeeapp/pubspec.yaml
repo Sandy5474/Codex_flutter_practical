@@ -1,0 +1,35 @@
+name: coffeeapp
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.4.4 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  google_fonts: ^6.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - image/coffee1.png
+    - image/profile.png
+    - image/coffee2.png
+    - image/coffee3.png
+    - image/coffee4.png
+    - image/coffee5.png
+    - image/coffee6.png
+    - image/Mask Group.png
+    - image/milk.png
+    - image/edit.png
+    - image/note.png
+    - image/Discount.png
+    - image/moneys.png
+    - image/dots.png

@@ -19,7 +19,7 @@ class _AlphabetState extends State<Alphabet> {
   void initState() {
     super.initState();
     setState(() {
-      _flutterTts.setLanguage('de-DE');
+      _flutterTts.setLanguage('de');
     });
   }
 
