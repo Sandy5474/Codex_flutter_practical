@@ -8,9 +8,13 @@ class Todo extends StatefulWidget {
 }
 
 class _TodoState extends State<Todo> {
-  List<String> data = [];
-  String userdata = '';
-  List delete = [];
+  TextEditingController titlecontroller = TextEditingController();
+  TextEditingController descriptioncontroller = TextEditingController();
+
+  void _isempty() {
+    titlecontroller.text = "";
+    descriptioncontroller.text = "";
+  }
 
   void addToDoList() {
     showModalBottomSheet(
@@ -27,12 +31,20 @@ class _TodoState extends State<Todo> {
                   initialValue: '',
                   decoration: InputDecoration(label: Text("Task")),
                   onChanged: (value) {
-                    userdata = value;
+                    titlecontroller.text = value;
                     setState(() {});
                   },
                 ),
                 SizedBox(
                   height: 10,
+                ),
+                TextFormField(
+                  initialValue: '',
+                  decoration: InputDecoration(label: Text("Task")),
+                  onChanged: (value) {
+                    descriptioncontroller.text = value;
+                    setState(() {});
+                  },
                 ),
                 ElevatedButton(
                     onPressed: () {
