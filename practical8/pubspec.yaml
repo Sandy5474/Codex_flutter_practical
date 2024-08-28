@@ -19,7 +19,5 @@ flutter:
   uses-material-design: true
   assets:
     - image/andrew.jpg
-    - image/house.jpg
-    - image/woodenhut.jpg
-    - image/hut.jpg
+    
 
