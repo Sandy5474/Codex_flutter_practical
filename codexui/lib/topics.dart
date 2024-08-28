@@ -28,11 +28,7 @@ class Topics extends StatelessWidget {
                         margin: EdgeInsets.only(top: 50),
                         child: IconButton(
                             onPressed: () {
-                              Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                    builder: (context) => homepage(),
-                                  ));
+                              Navigator.pop(context);
                             },
                             icon: Icon(
                               Icons.arrow_back_ios_new_sharp,

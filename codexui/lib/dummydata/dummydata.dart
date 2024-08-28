@@ -1,11 +1,40 @@
+import 'package:codexui/codes.dart';
+import 'package:codexui/homepage.dart';
+import 'package:codexui/login.dart';
+import 'package:codexui/profile.dart';
+import 'package:codexui/topics.dart';
 import 'package:flutter/material.dart';
 
-final iconList = <IconData>[
-  Icons.home_outlined,
-  Icons.search,
-  Icons.add_box_outlined,
-  Icons.favorite_outline,
-  Icons.account_circle_outlined
+List screens = [homepage(), homepage(), homepage(), homepage(), Profile()];
+
+final iconList = <Widget>[
+  Container(
+    height: 50,
+    width: 75,
+    child: Icon(Icons.home_outlined),
+  ),
+  Container(
+    height: 50,
+    width: 75,
+    child: Icon(Icons.search_sharp),
+  ),
+  Container(
+    height: 50,
+    width: 75,
+    child: Icon(Icons.add_box_outlined),
+  ),
+  Container(
+    height: 50,
+    width: 75,
+    child: Icon(Icons.favorite_border_rounded),
+  ),
+  Container(
+    height: 23,
+    width: 23,
+    decoration: BoxDecoration(
+        borderRadius: BorderRadius.all(Radius.circular(50)),
+        image: DecorationImage(image: AssetImage("images/Oval.png"))),
+  ),
 ];
 
 List iconTitle = ["Home", "Search", "Add", "Likes", "Profile"];
