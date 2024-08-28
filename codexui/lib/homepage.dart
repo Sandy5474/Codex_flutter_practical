@@ -211,7 +211,7 @@ class _homepageState extends State<homepage> {
             )
           ])),
       bottomNavigationBar: Container(
-        height: 79,
+        height: 55,
         width: 375,
         child: ListView.builder(
           scrollDirection: Axis.horizontal,

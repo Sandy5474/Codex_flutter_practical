@@ -160,7 +160,7 @@ class Codes extends StatelessWidget {
                       ),
                       Container(
                         margin: EdgeInsets.only(top: 20, left: 20),
-                        height: 220,
+                        height: 94,
                         width: 390,
                         child: ListView.builder(
                           itemCount: courseTopic["code"].length,

@@ -79,9 +79,9 @@ class Topics extends StatelessWidget {
               ),
             ),
             Container(
-              height: 594,
+              height: 466,
               width: 500,
-              padding: EdgeInsets.only(top: 50),
+              padding: EdgeInsets.only(top: 30),
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(50),
@@ -128,7 +128,7 @@ class Topics extends StatelessWidget {
                           ),
                         ),
                         Container(
-                          margin: EdgeInsets.only(top: 14, left: 10),
+                          margin: EdgeInsets.only(top: 6, left: 10),
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [

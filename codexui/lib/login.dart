@@ -13,8 +13,10 @@ class _loginState extends State<login> {
   String? name = "";
 
   final usernameController = TextEditingController();
+  final GlobalKey<FormState> _usernameKey = GlobalKey<FormState>();
 
   final passwordController = TextEditingController();
+  final GlobalKey<FormState> _passwordKey = GlobalKey<FormState>();
 
   @override
   Widget build(BuildContext context) {
@@ -55,10 +57,10 @@ class _loginState extends State<login> {
                 Container(
                   margin: EdgeInsets.only(top: 80),
                   width: 300,
-                  child: TextField(
-                      onChanged: (value) {
-                        name = value;
-                      },
+                  child: Form(
+                    key: _usernameKey,
+                    child: TextField(
+                      keyboardType: TextInputType.name,
                       controller: usernameController,
                       decoration: InputDecoration(
                           focusedBorder: OutlineInputBorder(
@@ -70,26 +72,33 @@ class _loginState extends State<login> {
                               fontWeight: FontWeight.w400, fontSize: 15),
                           suffixIcon: IconButton(
                               onPressed: () {},
-                              icon: Icon(Icons.close_rounded)))),
+                              icon: Icon(Icons.close_rounded))),
+                    ),
+                  ),
                 ),
                 Container(
                   width: 300,
-                  child: TextField(
-                      onChanged: (value) {
-                        name = value;
-                      },
-                      controller: passwordController,
-                      decoration: InputDecoration(
-                          focusedBorder: OutlineInputBorder(
-                              borderSide: BorderSide(color: Colors.white)),
-                          filled: true,
-                          fillColor: Colors.white,
-                          hintText: "Password",
-                          hintStyle: GoogleFonts.anekTamil(
-                              fontWeight: FontWeight.w400, fontSize: 15),
-                          suffixIcon: IconButton(
-                              onPressed: () {},
-                              icon: Icon(Icons.visibility_off)))),
+                  child: Form(
+                    key: _passwordKey,
+                    child: Expanded(
+                      child: TextField(
+                        controller: passwordController,
+                        obscureText: true,
+                        obscuringCharacter: "*",
+                        decoration: InputDecoration(
+                            focusedBorder: OutlineInputBorder(
+                                borderSide: BorderSide(color: Colors.white)),
+                            filled: true,
+                            fillColor: Colors.white,
+                            hintText: "Password",
+                            hintStyle: GoogleFonts.anekTamil(
+                                fontWeight: FontWeight.w400, fontSize: 15),
+                            suffixIcon: IconButton(
+                                onPressed: () {},
+                                icon: Icon(Icons.visibility_off))),
+                      ),
+                    ),
+                  ),
                 ),
                 SizedBox(
                   height: 5,
