@@ -2,6 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:todo_application/Tasks/Tasks.dart';
 
 import 'package:todo_application/category/category.dart';
 import 'package:todo_application/Tasks/taskPage.dart';
@@ -21,9 +22,6 @@ class _CategoryScreenState extends State<CategoryScreen> {
   Widget build(BuildContext context) {
     final CollectionReference categoriesref =
         FirebaseFirestore.instance.collection('categories');
-
-    final CollectionReference taskref =
-        FirebaseFirestore.instance.collection('tasks');
 
     return Scaffold(
       backgroundColor: Color(0xffD6D7EF),
@@ -161,9 +159,9 @@ class _CategoryScreenState extends State<CategoryScreen> {
                               context,
                               MaterialPageRoute(
                                 builder: (context) => Taskpage(
-                                    categoryId: category.id,
-                                    categoryName: category.name,
-                                    collectionName: category.name),
+                                  categoryId: category.id,
+                                  categoryName: category.name,
+                                ),
                               ),
                             );
                           },

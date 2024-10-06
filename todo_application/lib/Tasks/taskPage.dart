@@ -7,12 +7,12 @@ import 'package:todo_application/Tasks/Tasks.dart';
 class Taskpage extends StatelessWidget {
   final String categoryName;
   final String categoryId;
-  String collectionName = '';
-  Taskpage(
-      {super.key,
-      required this.categoryId,
-      required this.categoryName,
-      required this.collectionName});
+
+  Taskpage({
+    super.key,
+    required this.categoryId,
+    required this.categoryName,
+  });
 
   final TextEditingController _textFieldController = TextEditingController();
 
@@ -36,7 +36,7 @@ class Taskpage extends StatelessWidget {
         backgroundColor: const Color.fromRGBO(27, 26, 85, 1),
         centerTitle: true,
         title: Text(
-          collectionName,
+          categoryName,
           style: GoogleFonts.jost(
               color: Colors.white, fontSize: 24, fontWeight: FontWeight.w600),
         ),
