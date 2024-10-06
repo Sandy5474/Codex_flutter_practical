@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class login extends StatefulWidget {
-  login({super.key});
+  const login({super.key});
 
   @override
   State<login> createState() => _loginState();
@@ -28,7 +28,7 @@ class _loginState extends State<login> {
                   height: 315,
                   width: 394,
                   decoration: BoxDecoration(
-                      color: Color.fromRGBO(44, 55, 149, 0.67),
+                      color: Color(0xff2C3795),
                       borderRadius: BorderRadius.only(
                           bottomRight: Radius.circular(157.5))),
                   child: Column(
